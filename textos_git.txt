@@ -1,0 +1,50 @@
+Crear repositorio en git hub
+ingresar a la carpeta del proyecto y ejecutar git init para crear el repositorio local
+
+configurar git
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+luego ejecutamos 
+git add . 
+para que se carguen todos los archivos al staring area
+
+hacemos un commit del proyecto 
+git commit -m 'mi primer commit'
+
+agregamos el repositorio de git como una rama remota
+git remote add origin https://github.com/aqui-tu-repo.git
+
+luego hacemos un push a git hub 
+git push -u origin master
+
+para clonar un repositorio en la carpeta donde este en el terminal
+git clone git://github.com/schacon/grit.git
+
+crear y saltar a una nueva rama
+git checkout -b nombre_rama
+
+crear una nueva rama
+git branch nombre
+
+seleccionar una rama
+$ git checkout nombre_rama
+
+para hacer merge
+git checkout master
+git merge hotfix
+
+actualizar el repositorio remoto
+git push
+
+actualizar el repositorio local
+git pull
+
+listar las ramas
+git branch [-v|para ver los ultimos commit]
+
+ver las ramas que se les a hecho o no merge en la rama actual
+git branch [--merged | --no-merged]
+
+lista de cambios
+git diff
