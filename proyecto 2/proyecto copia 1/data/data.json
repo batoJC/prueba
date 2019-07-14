@@ -1,0 +1,89 @@
+[
+	{
+		"barrios" : 
+			[
+				{
+					"consumo" : 58,
+					"fila" : 3,
+					"columna" : 6
+				},
+				{
+					"consumo" : 58,
+					"fila" : 3,
+					"columna" : 12
+				},
+				{
+					"consumo" : 50,
+					"fila" : 6,
+					"columna" : 9
+				},
+				{
+					"consumo" : 60,
+					"fila" : 9,
+					"columna" : 6
+				},
+				{
+					"consumo" : 40,
+					"fila" : 2,
+					"columna" : 9
+				}
+			],
+		"tanques" : [
+			{
+				"capacidad" : 5000,
+				"cantidad" : 4800,
+				"fila" : 6,
+				"columna" : 2
+			},
+			{
+				"capacidad" : 6000,
+				"cantidad" : 5000,
+				"fila" : 6,
+				"columna" : 17
+			},
+			{
+				"capacidad" : 60000,
+				"cantidad" : 60000,
+				"fila" : 8,
+				"columna" : 17
+			}
+		],
+		"tubos" : [
+			{
+				"capacidad" : 20,
+				"origen" : "T6",
+				"destino" : "B1"
+			},
+			{
+				"capacidad" : 5000,
+				"origen" : "T8",
+				"destino" : "T6"
+			},
+			{
+				"capacidad" : 30,
+				"origen" : "B1",
+				"destino" : "T6"
+			},
+			{
+				"capacidad" : 200,
+				"origen" : "T6",
+				"destino" : "B3"
+			},
+			{
+				"capacidad" : 50,
+				"origen" : "B3",
+				"destino" : "B5"
+			},
+			{
+				"capacidad" : 60,
+				"origen" : "T7",
+				"destino" : "B2"
+			},
+			{
+				"capacidad" : 60,
+				"origen" : "T7",
+				"destino" : "B4"
+			}
+		]
+	}
+]
