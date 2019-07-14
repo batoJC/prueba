@@ -1,0 +1,17 @@
+<h3>Facuras</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Fecha hora de ingreso</th>
+            <th>placa</th>
+            <th>Editar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cosa of listaFacturas">
+            <td>{{ cosa.FechaHora }}</td>
+            <td>{{ cosa.Placa }}</td>
+            <td><a href="factura/{{ cosa.id }}" class="btn">Facturar</a></td>
+        </tr>
+    </tbody>
+</table>

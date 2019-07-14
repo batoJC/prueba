@@ -1,0 +1,60 @@
+
+<h3>Facturar registro</h3>
+
+<div class="input-field col s12">
+    <input [(ngModel)]="registro.Placa" id="placa" type="text" class="validate">
+    <label for="placa">Placa</label>
+</div>
+<div class="input-field col s12">
+    <select [(ngModel)]="registro.Tipo">
+        <option value="" disabled selected>Seleccione el tipo de registro</option>
+        <option value="Moto">Motocicleta</option>
+        <option value="Auto">Auto</option>
+    </select>
+</div>
+<div class="input-field col s12">
+    <input [(ngModel)]="registro.Marca"  id="marca" type="text" class="validate">
+    <label for="marca">Marca</label>
+</div>
+<div class="input-field col s12">
+    <input [(ngModel)]="registro.Modelo" id="modelo" type="text" class="validate">
+    <label for="modelo">Modelo</label>
+</div>
+<div class="input-field col s12">
+    <input [(ngModel)]="registro.Anio"  id="anyo" type="text" class="validate">
+    <label for="anyo">Año</label>
+</div>
+<div class="input-field col s12">
+    <select [(ngModel)]="registro.Combustible">
+        <option value="" disabled selected>Seleccione el tipo de Combustible</option>
+        <option value="Gasolina">Gasolina</option>
+        <option value="ACPM">ACPM</option>
+        <option value="Electrico">Eléctrico</option>
+    </select>
+    <label>Seleccione el tipo de Combustible</label>
+</div>
+<div class="input-field col s12">
+    <input [(ngModel)]="registro.Propietario.Codigo" id="nombre_propietario" type="text" class="validate">
+    <label for="nombre_propietario">Codigo del Propietario</label>
+</div>
+<div class="input-field col s12">
+    <input [(ngModel)]="registro.Propietario.Nombre" id="nombre_propietario" type="text" class="validate">
+    <label for="nombre_propietario">Nombre del Propietario</label>
+</div>
+<div class="input-field col s12">
+    <input [(ngModel)]="registro.Propietario.Contacto" id="nombre_propietario" type="text" class="validate">
+    <label for="nombre_propietario">Teléfono  del Propietario</label>
+</div>
+
+<h4><b>Placa: </b>{{ registro.Placa }}</h4>
+<h4><b>Tipo: </b>{{ registro.Tipo }}</h4>
+<h4><b>Marca: </b>{{ registro.Marca }}</h4>
+<h4><b>Modelo: </b>{{ registro.Modelo }}</h4>
+<h4><b>Anio: </b>{{ registro.Anio }}</h4>
+<h4><b>Combustible: </b>{{ registro.Combustible }}</h4>
+<h4><b>Codigo propietario: </b>{{ registro.Propietario.Codigo }}</h4>
+<h4><b>Nombre propietario: </b>{{ registro.Propietario.Nombre }}</h4>
+<h4><b>Contacto Propietarios: </b>{{ registro.Propietario.Contacto }}</h4>
+
+
+<br><br>

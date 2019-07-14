@@ -1,0 +1,49 @@
+
+<h3>Agregar o Editar vehiculo</h3>
+
+<div class="input-field col s12">
+    <input [(ngModel)]="vehiculo.placa" id="placa" type="text" class="validate">
+    <label for="placa">Placa</label>
+</div>
+<div class="input-field col s12">
+    <select [(ngModel)]="vehiculo.tipo_vehiculo">
+        <option value="" selected>Seleccione el tipo de Vehiculo</option>
+        <option value="Motocicleta">Motocicleta</option>
+        <option value="Vehiculo">Vehiculo</option>
+    </select>
+</div>
+<div class="input-field col s12">
+    <input [(ngModel)]="vehiculo.marca"  id="marca" type="text" class="validate">
+    <label for="marca">Marca</label>
+</div>
+<div class="input-field col s12">
+    <input [(ngModel)]="vehiculo.modelo" id="modelo" type="text" class="validate">
+    <label for="modelo">Modelo</label>
+</div>
+<div class="input-field col s12">
+    <input [(ngModel)]="vehiculo.anyo"  id="anyo" type="text" class="validate">
+    <label for="anyo">Año</label>
+</div>
+<div class="input-field col s12">
+    <select [(ngModel)]="vehiculo.tipo_combustible">
+        <option value="" selected>Seleccione el tipo de Combustible</option>
+        <option value="Gasolina">Gasolina</option>
+        <option value="ACPM">ACPM</option>
+        <option value="Electrico">Eléctrico</option>
+    </select>
+    <label>Seleccione el tipo de Combustible</label>
+</div>
+<div class="input-field col s12">
+    <input [(ngModel)]="vehiculo.nombre_propietario" id="nombre_propietario" type="text" class="validate">
+    <label for="nombre_propietario">Nombre del Propietario</label>
+</div>
+<div class="input-field col s12">
+    <input [(ngModel)]="vehiculo.telefono_propietario"  id="telefono_propietario" type="text" class="validate">
+    <label for="telefono_propietario">Telefono del Propietario</label>
+</div>
+<br>
+
+<div class="col s12 center-align">
+    <button (click)="guardar()" class="btn">Guardar</button>
+    <button (click)="agregar()" class="btn">Agregar</button>
+</div>
