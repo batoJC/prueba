@@ -1,0 +1,49 @@
+<!-- Modal Trigger -->
+<a class="waves-effect waves-light btn blue modal-trigger" href="#addClient" (click)="openModalAdd()" ><i class="material-icons left">add</i> Add Client</a>
+
+<!-- Modal Structure -->
+<div id="addClient" class="modal">
+  <div class="modal-content">
+    <h4 class="center">Add client new</h4>
+
+    <input [(ngModel)]="client._id" id="id" type="hidden" >
+    <div class="row">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">credit_card</i>
+        <input [(ngModel)]="client.document" id="document" type="text" class="validate">
+        <label for="document">Document</label>
+      </div>
+  
+      <div class="input-field col s6">
+        <i class="material-icons prefix">person</i>
+        <input [(ngModel)]="client.name" id="name" type="text" class="validate">
+        <label for="name">Name</label>
+      </div>
+  
+      <div class="input-field col s6">
+        <i class="material-icons prefix">person</i>
+        <input [(ngModel)]="client.last_name" id="last_name" type="text" class="validate">
+        <label for="last_name">Last Name</label>
+      </div>
+  
+      <div class="input-field col s6">
+        <i class="material-icons prefix">account_circle</i>
+        <input [(ngModel)]="client.cellphone" id="cellphone" type="text" class="validate">
+        <label for="cellphone">Cellphone</label>
+      </div>
+  
+      <div class="input-field col s6">
+        <i class="material-icons prefix">account_circle</i>
+        <input [(ngModel)]="client.address" id="address" type="text" class="validate">
+        <label for="address">Address</label>
+      </div>
+
+    </div>
+
+
+  </div>
+  <div class="modal-footer">
+    <a class="modal-close waves-effect waves-green btn-flat" (click)="closeModalAdd()">Close Modal</a>
+    <a class="modal-close waves-effect waves-green btn-flat" (click)="saveProductData()">Save Client</a>
+  </div>
+</div>

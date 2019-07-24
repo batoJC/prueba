@@ -1,0 +1,40 @@
+<h3>list of the clients</h3>
+
+<!-- MODAL FOR ADD AND EDIT CLIENTS -->
+<app-data-client #modal (add)="addClient($event)" (update)="updateClient($event)"></app-data-client>
+
+<br>
+<br>
+
+<!-- TABLE OF THE LIST THE CLIENTS -->
+<table class="table striped grey light-1 responsive-table">
+    <thead>
+        <tr class="text-white">
+            <th>Document</th>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Cellphone</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let client of listClient">
+            <td>{{ client.document }}</td>
+            <td>{{ client.name }}</td>
+            <td>{{ client.last_name }}</td>
+            <td>{{ client.cellphone }}</td>
+            <td>{{ client.address }}</td>
+            <td>
+                <button style="margin-right: 8px;" (click)="modal.loadData(client)" class="btn blue tooltipped" data-position="top" data-tooltip="Edit the client">
+                    <i class="material-icons">edit</i>
+                </button>
+                <button (click)="deleteClient(client._id)" class="btn red tooltipped" data-position="top" data-tooltip="delete the client">
+                    <i class="material-icons">delete</i>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
