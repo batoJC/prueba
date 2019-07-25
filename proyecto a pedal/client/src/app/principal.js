@@ -37,6 +37,7 @@ function editarActive(){
             elements[i].className = "active";
         }
     },300);
+    console.log('ppp');
 }
 
 function editarDisable(){

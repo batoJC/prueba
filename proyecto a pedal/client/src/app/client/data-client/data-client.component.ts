@@ -4,7 +4,8 @@ import { ClientOperationServiceService } from 'src/app/services/client-operation
 
 declare const openModal : any;
 declare const closeModal : any;
-declare const reloadEditar : any;
+declare const editarActive : any;
+declare const editarDisable : any;
 
 @Component({
   selector: 'app-data-client',
@@ -59,13 +60,14 @@ export class DataClientComponent implements OnInit {
       cellphone: null,
       address: null
     }
+    editarDisable();
   }
 
   loadData(data){
     let aux: ClientModel = data;
     this.client = Object.create(aux);
-    reloadEditar();
     this.openModalAdd();
+    editarActive();
   }
 
 
